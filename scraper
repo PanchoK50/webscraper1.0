@@ -1,7 +1,7 @@
 import tweepy as tw
 auth = tw.OAuthHandler("3rJOl1ODzm9yZy63FACdg", "5jPoQ5kQvMJFDYRNE8bQ4rHuds4xJqhvgNJM4awaE8")
 api = tw.API(auth)
-public_tweets = tw.Cursor(api.search,q="#goettingen")
+public_tweets = tw.Cursor(api.search,q="#goettingen").items():
 def hashtag(hs):
     total = 0
     for hst in hs:
